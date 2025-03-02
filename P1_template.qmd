@@ -1,0 +1,206 @@
+---
+title: "Client Report - What's in a Name?"
+subtitle: "Course DS 250"
+author: "RONALDO MONTEIRO"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
+---
+
+```{python}
+import pandas as pd
+import numpy as np
+from lets_plot import *
+
+LetsPlot.setup_html(isolated_frame=True)
+```
+
+
+## Project Notes
+
+__For Project 1 the answer to each question should include a chart **and** a written response. The years labels on your charts should not include a comma. At least **two** of your charts must include reference marks.__  
+
+```{python}
+# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
+
+# Include and execute your code here
+df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
+df
+```
+
+## QUESTION | TASK 1
+
+__How does your name (Ronald) at your birth (1980) year compare to its use historically?__
+
+_My name was declining from its peak of 30,895 registered names in 1948 (yellow line) to 5,484 in 1980, the year I was born (red line). This represents a decrease of approximately 82.24%. Since then, the number of registrations for my name has continued to decline. By 2015, the final year on record, it had dropped to 676, representing a decrease of approximately 87.67% compared to the year of my birth. The name experienced significant growth between the 1920s and 1950s, a period that coincided with the rise and popularity of actor Ronald Reagan, who would later become the president of the United States._
+
+```{python}
+# Filter the dataset to include only rows where the name is "Ronald"
+df_filtered = df[df["name"] == "Ronald"]
+
+# Find the year when the name "Ronald" had the highest total count
+peak_year = df_filtered.loc[df_filtered["Total"].idxmax(), "year"]
+peak_total = df_filtered["Total"].max()
+
+# Define the birth year to analyze
+birth_year = 1980
+
+# Retrieve the total occurrences of the name in the specified birth year 
+birth_total = df_filtered[df_filtered["year"] == birth_year]["Total"].values[0] if birth_year in df_filtered["year"].values else 0
+
+# Create a DataFrame with a single row to mark the birth year
+label1 = pd.DataFrame({
+    "year": [birth_year],
+    "Total": [birth_total],
+    "label": ["My birth year"]
+})
+
+
+# Create a line plot using ggplot to visualize the total registrations of the name "Ronald" over time
+(   ggplot(data=df_filtered, mapping=aes(x="year", y="Total"))
+    + geom_line(color="blue" )
+    + geom_label(x=peak_year, y=peak_total, label=f"Peak Year:{peak_year}", size=7, hjust=0)
+    + geom_label(x=birth_year, y=birth_total, label=f"Birth Year:{birth_year}", size=7, hjust=0)
+    + scale_x_continuous(format="d")
+    + labs(
+        title="Name: Ronald",
+        subtitle="Historical Context of My Name",
+        x = "Year (1910 - 2015)",
+        y = "Total Regristrations")
+)
+
+
+```
+
+
+## QUESTION | TASK 2
+
+__If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?__
+
+_I would guess 35 years old because this name peaked in popularity around 1990. I wouldn’t consider an age older than 44 or younger than 25, as these periods correspond to times with very low registration rates._
+
+```{python}
+# Filter the dataset to include only rows where the name is "Brittany"
+df_filtered = df[df["name"] == "Brittany"]
+
+# Create a line plot using ggplot to visualize the total registrations of the name "Brittany" over time
+(   ggplot(data=df_filtered, mapping=aes(x="year", y="Total"))
+    + geom_line(color="blue" )
+    + scale_x_continuous(format="d")
+    + labs(
+        title="Name: Brittany",
+        subtitle="Historical Context the Name",
+        x = "Year (1910 - 2015)",
+        y = "Total Regristrations")
+)
+
+```
+
+
+## QUESTION | TASK 3
+
+__Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?__
+
+_Mary was the most popular name because of its strong history and religious meaning. All four names became less popular after their highest points, especially after the 1970s. Traditional Christian names like these have become less common because people now prefer more modern, unique, or diverse names._
+
+```{python}
+# Filter the dataset to include four christian names (Mary, Martha, Peter, and Paul)
+df_filtered = df[df["name"].isin(["Mary", "Martha", "Peter", "Paul"])]
+
+# Create a line plot using ggplot to visualize the total registrations of the four christian names over time
+(
+    ggplot(data=df_filtered, mapping=aes(x="year", y="Total", color="name"))
+    + geom_line()
+    + scale_x_continuous(format="d")
+    + labs(
+        title="Name Trends Over Time",
+        subtitle="Historical Context of Christian Names",
+        x="Year (1920 - 2000)",
+        y="Total Registrations",
+        color="Name"
+    )
+)
+
+```
+
+
+
+## QUESTION | TASK 4
+
+__Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__  
+
+_The graph shows an exponential growth of the name Leonardo after 1997, the same year the movie Titanic was released, starring actor Leonardo DiCaprio. This increase suggests a possible cultural influence from the movie, which became a global phenomenon and made the name more popular in different regions._
+
+```{python}
+# Filter the dataset to include only rows where the name is "Leonardo"
+df_filtered = df[(df["name"] == "Leonardo")]
+
+# Create a line plot using ggplot to visualize the total registrations of the name "Leonardo" over time
+(
+    ggplot(data=df_filtered, mapping=aes(x="year", y="Total", color="name"))
+    + geom_line()
+    + scale_x_continuous(format="d")
+    + labs(
+        title="Name Trends Over Time",
+        subtitle="Historical Context of the name Leonardo",
+        x="Year (1920 - 2000)",
+        y="Total Registrations",
+        color="Name")
+    + theme_classic()    
+)
+
+
+```
+
+---
+
+## STRETCH QUESTION | TASK 1
+
+__Reproduce the chart Elliot using the data from the `names_year.csv` file.__ 
+
+_The name "Elliot" maintained moderate presence until 1982, when the release of E.T. coincided with a sharp increase. Re-releases in 1985 and 2002 also seem to have influenced its usage. After 2002, the name continued to rise. The chart suggests that E.T. - The Extra-Terrestrial had a significant impact on its popularity, especially at the time of its release and re-releases._
+
+```{python}
+# Filter the dataset to include only rows where the name is "Elliot"
+df_filtered = df[df["name"] == "Elliot"]
+
+# Create a line plot using ggplot to visualize the total registrations of the name "Elliot" over time
+(   ggplot(data=df_filtered, mapping=aes(x="year", y="Total"))
+    + geom_line(color="blue" )
+    + geom_vline(xintercept=1982, color="red", linetype="dashed")
+    + geom_vline(xintercept=1985, color="red", linetype="dashed")
+    + geom_vline(xintercept=2002, color="red", linetype="dashed")
+    + geom_text(x=1982, y=max(df_filtered["Total"]), label="E.T Released", color="black", ha="center", va="bottom", size= 5,hjust = 1, vjust = 0)
+    + geom_text(x=1985, y=max(df_filtered["Total"]), label="Second Released", color="black", ha="center", va="bottom", size= 5, hjust = 0, vjust = 1)
+    + geom_text(x=2002, y=max(df_filtered["Total"]), label="Third Released", color="black", ha="center", va="bottom", size= 5, hjust = 0, vjust = 1)
+    + theme(panel_background = element_rect(fill = "lightblue"))
+
+    + scale_x_continuous(format="d")
+    + labs(
+        title="Elliot...What?",
+        x = "Year",
+        y = "Total")
+)
+
+```
+
+
+---
