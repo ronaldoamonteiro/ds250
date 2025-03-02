@@ -1,7 +1,7 @@
 ---
 title: "Client Report - Late Flights & Missing Data (JSON)"
 subtitle: "Course DS 250"
-author: "[Ronaldo A Monteiro]"
+author: "[Ronaldo A Monteiro ]"
 format:
   html:
     self-contained: true
