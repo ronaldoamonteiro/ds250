@@ -39,6 +39,7 @@ LetsPlot.setup_html(isolated_frame=True)
 
 # Include and execute your code here
 df = pd.read_json("https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json")
+df
 ```
 
 ## Elevator pitch
@@ -54,7 +55,12 @@ _type your results and analysis here_
 
 ```{python}
 # Include and execute your code here
+# Sort the dataframe based on the “month” column in ascending order and select the first 5 rows
+data = df.sort_values("month", ascending=True).head(5)
 
+# Convert to JSON format
+json_data = data.to_json(orient="records", indent=4)
+print(json_data)
 
 ```
 
@@ -67,6 +73,19 @@ _type your results and analysis here_
 
 ```{python}
 # Include and execute your code here
+# Group by airport and calculate required metrics
+airport_metrics = df.groupby("airport_code").agg(
+    total_flights=("num_of_flights_total", "sum"),
+    total_delayed_flights=("num_of_delays_total", "sum"),
+    average_delay_time=("minutes_delayed_total", lambda x: x.sum() / df["num_of_delays_total"].sum() / 60)
+).reset_index()
+
+# Calculate the proportion of delayed flights
+airport_metrics["proportion_of_delayed_flights"] = airport_metrics["total_delayed_flights"] / airport_metrics["total_flights"]
+
+# Sort the aggregated metrics
+airport_metrics = airport_metrics.sort_values(by="proportion_of_delayed_flights", ascending=False)
+display(airport_metrics)
 
 
 ```
@@ -81,6 +100,37 @@ _type your results and analysis here_
 
 ```{python}
 # Include and execute your code here
+# Create new column for the month
+airport_metrics = df.groupby("month").agg(
+    total_flights=("num_of_flights_total", "sum"),
+    total_delayed_flights=("num_of_delays_total", "sum")
+).assign(
+    delay_flight_month=lambda x: x.total_delayed_flights / x.total_flights
+).reset_index()
+
+# Remove rows with missing values in the month column
+airport_metrics = airport_metrics[airport_metrics.month != "NaN"]
+
+# Ensure the month column is ordered by month number
+airport_metrics["month"] = pd.Categorical(
+    airport_metrics["month"],
+    categories=[
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ],
+    ordered=True
+)
+
+# Sort the dataframe by month
+airport_metrics = airport_metrics.sort_values("month")
+
+# Plot using Plotly Express
+import plotly.express as px
+fig = px.bar(
+    airport_metrics, x="month", y="delay_flight_month",
+    labels={"month": "Month", "delay_flight_month": "Average Delay Flights"}
+)
+fig.show()
 
 ```
 
@@ -91,25 +141,68 @@ _type your results and analysis here_
 According to the BTS website, the “Weather” category only accounts for severe weather delays. Mild weather delays are not counted in the “Weather” category, but are actually included in both the “NAS” and “Late-Arriving Aircraft” categories. __Your job is to create a new column that calculates the total number of flights delayed by weather (both severe and mild).__ You will need to replace all the missing values in the Late Aircraft variable with the mean. Show your work by printing the first 5 rows of data in a table. Use these three rules for your calculations:  
 
     a. 100% of delayed flights in the Weather category are due to weather  
-    a. 30% of all delayed flights in the Late-Arriving category are due to weather  
-    a. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%    
+    b. 30% of all delayed flights in the Late-Arriving category are due to weather  
+    c. From April to August, 40% of delayed flights in the NAS category are due to weather. The rest of the months, the proportion rises to 65%    
 
 _type your results and analysis here_
 
 ```{python}
 # Include and execute your code here
 
+# Part A: only delays from the Weather category
+
+# Load and prepare data
+url_flights = 'https://github.com/byuidatascience/data4missing/raw/master/data-raw/flights_missing/flights_missing.json'
+df = pd.read_json(url_flights)
+df.replace([-999, "1500+", "n/a", "", None, 'NaN'], np.nan, inplace=True)
+df["num_of_delays_weather"] = df["num_of_delays_weather"].astype(float)
+
+# calculate total weather delays (only from the Weather category)
+df["total_weather_delays_A"] = df["num_of_delays_weather"]
+
+# Visualization
+display(df[["airport_code", "month", "num_of_delays_weather", "total_weather_delays_A"]].head())
+
 ```
 
 
 ```{python}
 # Include and execute your code here
+# Part B: 30% of the delays in the Late-Arriving Aircraft category are due to weather
+
+# Replace missing values and convert to float
+df["num_of_delays_late_aircraft"] = df["num_of_delays_late_aircraft"].replace("NaN", np.nan).astype(float)
+late_aircraft_mean = df["num_of_delays_late_aircraft"].mean()
+df["num_of_delays_late_aircraft"] = df["num_of_delays_late_aircraft"].fillna(late_aircraft_mean)
+
+# Calculate total weather delays (30% of late-aircraft delays)
+df["total_weather_delays_B"] = df["num_of_delays_late_aircraft"] * 0.3
+
+# Visualization
+display(df[["airport_code", "month", "num_of_delays_late_aircraft", "total_weather_delays_B"]].head())
 
 ```
 
 
 ```{python}
 # Include and execute your code here
+# Part C: NAS weather delays, with varying percentages by month
+
+# Convert to float
+df["num_of_delays_nas"] = df["num_of_delays_nas"].astype(float)
+
+# Function to apply the factor depending on the month
+def nas_weather(row):
+    if row["month"] in ["April", "May", "June", "July", "August"]:
+        return row["num_of_delays_nas"] * 0.4
+    else:
+        return row["num_of_delays_nas"] * 0.65
+
+# Apply function
+df["total_weather_delays_C"] = df.apply(nas_weather, axis=1)
+
+# Visualization
+display(df[["airport_code", "month", "num_of_delays_nas", "total_weather_delays_C"]].head())
 
 ```
 
@@ -121,9 +214,9 @@ __Using the new weather variable calculated above, create a barplot showing the 
 
 _type your results and analysis here_
 ```{python}
-# Include and execute your code here
 
 ```
+
 
 
 ---
@@ -136,7 +229,6 @@ __Which delay is the worst delay?__ Create a similar analysis as above for Weaht
 _type your results and analysis here_
 
 ```{python}
-# Include and execute your code here
 
 
 ```
