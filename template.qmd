@@ -1,0 +1,32 @@
+
+---
+
+```{python}
+import pandas as pd 
+import numpy as np
+from lets_plot import *
+# add the additional libraries you need to import for ML here
+
+LetsPlot.setup_html(isolated_frame=True)
+
+```
+
+
+```{python}
+
+stocks = pd.DataFrame({
+  'year': [2015, 2015, 2016, 2016],
+  'half':  [1,    2,     1,    2],
+  'return': [1.88, 0.59, 0.92, 0.17]
+})
+(stocks.
+  pivot(
+    index = 'half', 
+    columns = 'year', 
+    values = 'return').
+  melt(
+    var_name = 'year', 
+    value_name = 'return')
+  )
+
+```

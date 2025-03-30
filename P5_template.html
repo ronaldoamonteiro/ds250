@@ -3132,7 +3132,7 @@ vertical-align: -.125em;
   <li><a href="#stretch-questiontask-3" id="toc-stretch-questiontask-3">STRETCH QUESTION|TASK 3</a></li>
   </ul>
 </nav>
-<div id="625d772e" class="cell" data-execution_count="1">
+<div id="95c07898" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
@@ -3143,7 +3143,7 @@ vertical-align: -.125em;
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>LetsPlot.setup_html(isolated_frame<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="33d40dbd" class="cell" data-execution_count="2">
+<div id="8a363194" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html</span></span>
@@ -3152,9 +3152,9 @@ vertical-align: -.125em;
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># import your data here using pandas and the URL</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://github.com/fivethirtyeight/data/raw/master/star-wars-survey/StarWars.csv&quot;</span>, encoding_errors<span class="op">=</span><span class="st">&quot;ignore&quot;</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="17">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -3258,202 +3258,10 @@ vertical-align: -.125em;
 <td>Bachelor degree</td>
 <td>West South Central</td>
 </tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>3.292765e+09</td>
-<td>Yes</td>
-<td>No</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>1</td>
-<td>...</td>
-<td>Unfamiliar (N/A)</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>No</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$0 - $24,999</td>
-<td>High school degree</td>
-<td>West North Central</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>3.292763e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>5</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$100,000 - $149,999</td>
-<td>Some college or Associate degree</td>
-<td>West North Central</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1182</td>
-<td>3.288389e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>5</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>Han</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Female</td>
-<td>18-29</td>
-<td>$0 - $24,999</td>
-<td>Some college or Associate degree</td>
-<td>East North Central</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1183</td>
-<td>3.288379e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>4</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Female</td>
-<td>30-44</td>
-<td>$50,000 - $99,999</td>
-<td>Bachelor degree</td>
-<td>Mountain</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1184</td>
-<td>3.288375e+09</td>
-<td>No</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>No</td>
-<td>Female</td>
-<td>30-44</td>
-<td>$50,000 - $99,999</td>
-<td>Bachelor degree</td>
-<td>Middle Atlantic</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1185</td>
-<td>3.288373e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>4</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>Han</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Female</td>
-<td>45-60</td>
-<td>$100,000 - $149,999</td>
-<td>Some college or Associate degree</td>
-<td>East North Central</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1186</td>
-<td>3.288373e+09</td>
-<td>Yes</td>
-<td>No</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>6</td>
-<td>...</td>
-<td>Very unfavorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>No</td>
-<td>Female</td>
-<td>&gt; 60</td>
-<td>$50,000 - $99,999</td>
-<td>Graduate degree</td>
-<td>Pacific</td>
-</tr>
 </tbody>
 </table>
 
-<p>1187 rows × 38 columns</p>
+<p>3 rows × 38 columns</p>
 </div>
 </div>
 </div>
@@ -3466,17 +3274,79 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-1">QUESTION|TASK 1</h2>
 <p><strong>Shorten the column names and clean them up for easier use with pandas.</strong> Provide a table or list that exemplifies how you fixed the names.</p>
 <p><em>type your results and analysis here</em></p>
-<div id="a4deb5ec" class="cell" data-execution_count="3">
+<div id="a124c890" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns<span class="op">=</span>{</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;Have you seen any of the 6 films in the Star Wars franchise?&#39;</span>: <span class="st">&#39;Question_1&#39;</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;Do you consider yourself to be a fan of the Star Wars film franchise?&#39;</span>: <span class="st">&#39;Question_2&#39;</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;Which of the following Star Wars films have you seen? Please select all that apply.&#39;</span>: <span class="st">&#39;Question_3&#39;</span>})</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Renaming colunms (simplifying)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> [</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;respondent_id&#39;</span>, <span class="st">&#39;seen_any_movie&#39;</span>, <span class="st">&#39;fan&#39;</span>, <span class="st">&#39;seen_ep1&#39;</span>, <span class="st">&#39;seen_ep2&#39;</span>, <span class="st">&#39;seen_ep3&#39;</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;seen_ep4&#39;</span>, <span class="st">&#39;seen_ep5&#39;</span>, <span class="st">&#39;seen_ep6&#39;</span>, <span class="st">&#39;rank_ep1&#39;</span>, <span class="st">&#39;rank_ep2&#39;</span>, <span class="st">&#39;rank_ep3&#39;</span>, </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;rank_ep4&#39;</span>, <span class="st">&#39;rank_ep5&#39;</span>, <span class="st">&#39;rank_ep6&#39;</span>, <span class="st">&#39;han_solo&#39;</span>, <span class="st">&#39;luke_skywalker&#39;</span>, <span class="st">&#39;princess_leia&#39;</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;anakin_skywalker&#39;</span>, <span class="st">&#39;obi_wan&#39;</span>, <span class="st">&#39;palpatine&#39;</span>, <span class="st">&#39;darth_vader&#39;</span>, <span class="st">&#39;lando_calrissian&#39;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;boba_fett&#39;</span>, <span class="st">&#39;c3po&#39;</span>, <span class="st">&#39;r2d2&#39;</span>, <span class="st">&#39;jar_jar_binks&#39;</span>, <span class="st">&#39;padme_amidala&#39;</span>, <span class="st">&#39;yoda&#39;</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;shot_first&#39;</span>, <span class="st">&#39;know_exp_universe&#39;</span>, <span class="st">&#39;fan_exp_universe&#39;</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;fan_star_trek&#39;</span>, <span class="st">&#39;gender&#39;</span>, <span class="st">&#39;age&#39;</span>, <span class="st">&#39;household_income&#39;</span>, <span class="st">&#39;education&#39;</span>, <span class="st">&#39;location&#39;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>df</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a DataFrame comparing original and cleaned column names</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>column_comparison <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Original Name&#39;</span>: [</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;RespondentID&#39;</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Have you seen any of the 6 films in the Star Wars franchise?&#39;</span>,</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Do you consider yourself to be a fan of the Star Wars film franchise?&#39;</span>,</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Which of the following Star Wars films have you seen? (Ep.1)&#39;</span>,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 4 (Ep.2)&#39;</span>,</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 5 (Ep.3)&#39;</span>,</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 6 (Ep.4)&#39;</span>,</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 7 (Ep.5)&#39;</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 8 (Ep.6)&#39;</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Please rank the Star Wars films in order of preference (Ep.1)&#39;</span>,</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 10 (Ep.2)&#39;</span>,</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 11 (Ep.3)&#39;</span>,</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 12 (Ep.4)&#39;</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 13 (Ep.5)&#39;</span>,</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 14 (Ep.6)&#39;</span>,</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Favorability of character (Han Solo)&#39;</span>,</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 16 (Luke Skywalker)&#39;</span>,</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 17 (Princess Leia)&#39;</span>,</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 18 (Anakin Skywalker)&#39;</span>,</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 19 (Obi-Wan Kenobi)&#39;</span>,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 20 (Palpatine)&#39;</span>,</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 21 (Darth Vader)&#39;</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 22 (Lando Calrissian)&#39;</span>,</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 23 (Boba Fett)&#39;</span>,</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 24 (C-3PO)&#39;</span>,</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 25 (R2-D2)&#39;</span>,</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 26 (Jar Jar Binks)&#39;</span>,</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 27 (Padme Amidala)&#39;</span>,</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Unnamed: 28 (Yoda)&#39;</span>,</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Which character shot first?&#39;</span>,</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Are you familiar with the Expanded Universe?&#39;</span>,</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Do you consider yourself to be a fan of the Expanded Universe?&#39;</span>,</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Do you consider yourself to be a fan of the Star Trek franchise?&#39;</span>,</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Gender&#39;</span>,</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Age&#39;</span>,</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Household Income&#39;</span>,</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Education&#39;</span>,</span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Location (Census Region)&#39;</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Cleaned Name&#39;</span>: [</span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;respondent_id&#39;</span>, <span class="st">&#39;seen_any_movie&#39;</span>, <span class="st">&#39;fan&#39;</span>, <span class="st">&#39;seen_ep1&#39;</span>, <span class="st">&#39;seen_ep2&#39;</span>, <span class="st">&#39;seen_ep3&#39;</span>,</span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;seen_ep4&#39;</span>, <span class="st">&#39;seen_ep5&#39;</span>, <span class="st">&#39;seen_ep6&#39;</span>, <span class="st">&#39;rank_ep1&#39;</span>, <span class="st">&#39;rank_ep2&#39;</span>, <span class="st">&#39;rank_ep3&#39;</span>, </span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;rank_ep4&#39;</span>, <span class="st">&#39;rank_ep5&#39;</span>, <span class="st">&#39;rank_ep6&#39;</span>, <span class="st">&#39;han_solo&#39;</span>, <span class="st">&#39;luke_skywalker&#39;</span>, <span class="st">&#39;princess_leia&#39;</span>,</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;anakin_skywalker&#39;</span>, <span class="st">&#39;obi_wan&#39;</span>, <span class="st">&#39;palpatine&#39;</span>, <span class="st">&#39;darth_vader&#39;</span>, <span class="st">&#39;lando_calrissian&#39;</span>,</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;boba_fett&#39;</span>, <span class="st">&#39;c3po&#39;</span>, <span class="st">&#39;r2d2&#39;</span>, <span class="st">&#39;jar_jar_binks&#39;</span>, <span class="st">&#39;padme_amidala&#39;</span>, <span class="st">&#39;yoda&#39;</span>,</span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;shot_first&#39;</span>, <span class="st">&#39;know_exp_universe&#39;</span>, <span class="st">&#39;fan_exp_universe&#39;</span>,</span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;fan_star_trek&#39;</span>, <span class="st">&#39;gender&#39;</span>, <span class="st">&#39;age&#39;</span>, <span class="st">&#39;household_income&#39;</span>, <span class="st">&#39;education&#39;</span>, <span class="st">&#39;location&#39;</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the resulting table</span></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>column_comparison</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="18">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 
 
@@ -3484,27 +3354,260 @@ vertical-align: -.125em;
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">RespondentID</th>
-<th data-quarto-table-cell-role="th">Question_1</th>
-<th data-quarto-table-cell-role="th">Question_2</th>
-<th data-quarto-table-cell-role="th">Question_3</th>
-<th data-quarto-table-cell-role="th">Unnamed: 4</th>
-<th data-quarto-table-cell-role="th">Unnamed: 5</th>
-<th data-quarto-table-cell-role="th">Unnamed: 6</th>
-<th data-quarto-table-cell-role="th">Unnamed: 7</th>
-<th data-quarto-table-cell-role="th">Unnamed: 8</th>
-<th data-quarto-table-cell-role="th">Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.</th>
+<th data-quarto-table-cell-role="th">Original Name</th>
+<th data-quarto-table-cell-role="th">Cleaned Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>RespondentID</td>
+<td>respondent_id</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Have you seen any of the 6 films in the Star W...</td>
+<td>seen_any_movie</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Do you consider yourself to be a fan of the St...</td>
+<td>fan</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Which of the following Star Wars films have yo...</td>
+<td>seen_ep1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Unnamed: 4 (Ep.2)</td>
+<td>seen_ep2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Unnamed: 5 (Ep.3)</td>
+<td>seen_ep3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Unnamed: 6 (Ep.4)</td>
+<td>seen_ep4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Unnamed: 7 (Ep.5)</td>
+<td>seen_ep5</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Unnamed: 8 (Ep.6)</td>
+<td>seen_ep6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Please rank the Star Wars films in order of pr...</td>
+<td>rank_ep1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Unnamed: 10 (Ep.2)</td>
+<td>rank_ep2</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>Unnamed: 11 (Ep.3)</td>
+<td>rank_ep3</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>Unnamed: 12 (Ep.4)</td>
+<td>rank_ep4</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>Unnamed: 13 (Ep.5)</td>
+<td>rank_ep5</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>Unnamed: 14 (Ep.6)</td>
+<td>rank_ep6</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">15</td>
+<td>Favorability of character (Han Solo)</td>
+<td>han_solo</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">16</td>
+<td>Unnamed: 16 (Luke Skywalker)</td>
+<td>luke_skywalker</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">17</td>
+<td>Unnamed: 17 (Princess Leia)</td>
+<td>princess_leia</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">18</td>
+<td>Unnamed: 18 (Anakin Skywalker)</td>
+<td>anakin_skywalker</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">19</td>
+<td>Unnamed: 19 (Obi-Wan Kenobi)</td>
+<td>obi_wan</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">20</td>
+<td>Unnamed: 20 (Palpatine)</td>
+<td>palpatine</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">21</td>
+<td>Unnamed: 21 (Darth Vader)</td>
+<td>darth_vader</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">22</td>
+<td>Unnamed: 22 (Lando Calrissian)</td>
+<td>lando_calrissian</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">23</td>
+<td>Unnamed: 23 (Boba Fett)</td>
+<td>boba_fett</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">24</td>
+<td>Unnamed: 24 (C-3PO)</td>
+<td>c3po</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">25</td>
+<td>Unnamed: 25 (R2-D2)</td>
+<td>r2d2</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>Unnamed: 26 (Jar Jar Binks)</td>
+<td>jar_jar_binks</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">27</td>
+<td>Unnamed: 27 (Padme Amidala)</td>
+<td>padme_amidala</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">28</td>
+<td>Unnamed: 28 (Yoda)</td>
+<td>yoda</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">29</td>
+<td>Which character shot first?</td>
+<td>shot_first</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>Are you familiar with the Expanded Universe?</td>
+<td>know_exp_universe</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">31</td>
+<td>Do you consider yourself to be a fan of the Ex...</td>
+<td>fan_exp_universe</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>Do you consider yourself to be a fan of the St...</td>
+<td>fan_star_trek</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">33</td>
+<td>Gender</td>
+<td>gender</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">34</td>
+<td>Age</td>
+<td>age</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">35</td>
+<td>Household Income</td>
+<td>household_income</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">36</td>
+<td>Education</td>
+<td>education</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">37</td>
+<td>Location (Census Region)</td>
+<td>location</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="questiontask-2" class="level2">
+<h2 class="anchored" data-anchor-id="questiontask-2">QUESTION|TASK 2</h2>
+<p><strong>Clean and format the data so that it can be used in a machine learning model.</strong> As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.<br>
+A. Filter the dataset to respondents that have seen at least one film<br>
+B. Create a new column that converts the age ranges to a single number. Drop the age range categorical column<br>
+C. Create a new column that converts the education groupings to a single number. Drop the school categorical column<br>
+D. Create a new column that converts the income ranges to a single number. Drop the income range categorical column<br>
+E. Create your target (also known as “y” or “label”) column based on the new income range column<br>
+F. One-hot encode all remaining categorical columns</p>
+<p><em>type your results and analysis here</em></p>
+<div id="7021197a" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Question A</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Columns that indicate whether a respondent has seen a specific Star Wars movie</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>seen_movie_columns <span class="op">=</span> [<span class="st">&#39;seen_ep1&#39;</span>, <span class="st">&#39;seen_ep2&#39;</span>, <span class="st">&#39;seen_ep3&#39;</span>, <span class="st">&#39;seen_ep4&#39;</span>, <span class="st">&#39;seen_ep5&#39;</span>, <span class="st">&#39;seen_ep6&#39;</span>]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtering dataset to keep only respondents who have seen at least one movie</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>df_filtered <span class="op">=</span> df[df[seen_movie_columns].notnull().<span class="bu">any</span>(axis<span class="op">=</span><span class="dv">1</span>)]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying the first few rows to verify the result</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>df_filtered.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">respondent_id</th>
+<th data-quarto-table-cell-role="th">seen_any_movie</th>
+<th data-quarto-table-cell-role="th">fan</th>
+<th data-quarto-table-cell-role="th">seen_ep1</th>
+<th data-quarto-table-cell-role="th">seen_ep2</th>
+<th data-quarto-table-cell-role="th">seen_ep3</th>
+<th data-quarto-table-cell-role="th">seen_ep4</th>
+<th data-quarto-table-cell-role="th">seen_ep5</th>
+<th data-quarto-table-cell-role="th">seen_ep6</th>
+<th data-quarto-table-cell-role="th">rank_ep1</th>
 <th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">Unnamed: 28</th>
-<th data-quarto-table-cell-role="th">Which character shot first?</th>
-<th data-quarto-table-cell-role="th">Are you familiar with the Expanded Universe?</th>
-<th data-quarto-table-cell-role="th">Do you consider yourself to be a fan of the Expanded Universe?</th>
-<th data-quarto-table-cell-role="th">Do you consider yourself to be a fan of the Star Trek franchise?</th>
-<th data-quarto-table-cell-role="th">Gender</th>
-<th data-quarto-table-cell-role="th">Age</th>
-<th data-quarto-table-cell-role="th">Household Income</th>
-<th data-quarto-table-cell-role="th">Education</th>
-<th data-quarto-table-cell-role="th">Location (Census Region)</th>
+<th data-quarto-table-cell-role="th">yoda</th>
+<th data-quarto-table-cell-role="th">shot_first</th>
+<th data-quarto-table-cell-role="th">know_exp_universe</th>
+<th data-quarto-table-cell-role="th">fan_exp_universe</th>
+<th data-quarto-table-cell-role="th">fan_star_trek</th>
+<th data-quarto-table-cell-role="th">gender</th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">household_income</th>
+<th data-quarto-table-cell-role="th">education</th>
+<th data-quarto-table-cell-role="th">location</th>
 </tr>
 </thead>
 <tbody>
@@ -3557,30 +3660,6 @@ vertical-align: -.125em;
 <td>South Atlantic</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3.292880e+09</td>
-<td>No</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$0 - $24,999</td>
-<td>Bachelor degree</td>
-<td>West South Central</td>
-</tr>
-<tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>3.292765e+09</td>
 <td>Yes</td>
@@ -3604,7 +3683,7 @@ vertical-align: -.125em;
 <td>High school degree</td>
 <td>West North Central</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td data-quarto-table-cell-role="th">4</td>
 <td>3.292763e+09</td>
 <td>Yes</td>
@@ -3628,33 +3707,9 @@ vertical-align: -.125em;
 <td>Some college or Associate degree</td>
 <td>West North Central</td>
 </tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1182</td>
-<td>3.288389e+09</td>
+<td data-quarto-table-cell-role="th">5</td>
+<td>3.292731e+09</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Star Wars: Episode I The Phantom Menace</td>
@@ -3665,165 +3720,298 @@ vertical-align: -.125em;
 <td>Star Wars: Episode VI Return of the Jedi</td>
 <td>5</td>
 <td>...</td>
-<td>Very favorably</td>
-<td>Han</td>
-<td>No</td>
-<td>NaN</td>
+<td>Somewhat favorably</td>
+<td>Greedo</td>
 <td>Yes</td>
-<td>Female</td>
+<td>No</td>
+<td>No</td>
+<td>Male</td>
 <td>18-29</td>
-<td>$0 - $24,999</td>
-<td>Some college or Associate degree</td>
-<td>East North Central</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1183</td>
-<td>3.288379e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>4</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Female</td>
-<td>30-44</td>
-<td>$50,000 - $99,999</td>
-<td>Bachelor degree</td>
-<td>Mountain</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1184</td>
-<td>3.288375e+09</td>
-<td>No</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>No</td>
-<td>Female</td>
-<td>30-44</td>
-<td>$50,000 - $99,999</td>
-<td>Bachelor degree</td>
-<td>Middle Atlantic</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1185</td>
-<td>3.288373e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>4</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>Han</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Female</td>
-<td>45-60</td>
 <td>$100,000 - $149,999</td>
 <td>Some college or Associate degree</td>
-<td>East North Central</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1186</td>
-<td>3.288373e+09</td>
-<td>Yes</td>
-<td>No</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>6</td>
-<td>...</td>
-<td>Very unfavorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>No</td>
-<td>Female</td>
-<td>&gt; 60</td>
-<td>$50,000 - $99,999</td>
-<td>Graduate degree</td>
-<td>Pacific</td>
+<td>West North Central</td>
 </tr>
 </tbody>
 </table>
 
-<p>1187 rows × 38 columns</p>
+<p>5 rows × 38 columns</p>
 </div>
 </div>
 </div>
-</section>
-<section id="questiontask-2" class="level2">
-<h2 class="anchored" data-anchor-id="questiontask-2">QUESTION|TASK 2</h2>
-<p><strong>Clean and format the data so that it can be used in a machine learning model.</strong> As you format the data, you should complete each item listed below. In your final report provide example(s) of the reformatted data with a short description of the changes made.<br>
-a. Filter the dataset to respondents that have seen at least one film<br>
-a. Create a new column that converts the age ranges to a single number. Drop the age range categorical column<br>
-a. Create a new column that converts the education groupings to a single number. Drop the school categorical column<br>
-a. Create a new column that converts the income ranges to a single number. Drop the income range categorical column<br>
-a. Create your target (also known as “y” or “label”) column based on the new income range column<br>
-a. One-hot encode all remaining categorical columns</p>
-<p><em>type your results and analysis here</em></p>
-<div id="70dc37bd" class="cell" data-execution_count="4">
+<div id="b23ac09d" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Question B</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove invalid rows containing the string &#39;Response&#39; in age column</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>df_filtered <span class="op">=</span> df_filtered[df_filtered[<span class="st">&#39;age&#39;</span>] <span class="op">!=</span> <span class="st">&#39;Response&#39;</span>]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Mapping dictionary to convert age ranges into numerical midpoints</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>age_mapping <span class="op">=</span> {</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;18-29&#39;</span>: <span class="dv">24</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;30-44&#39;</span>: <span class="dv">37</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;45-60&#39;</span>: <span class="dv">52</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;&gt; 60&#39;</span>: <span class="dv">65</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    np.nan: <span class="va">None</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a numeric age column</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>df_filtered[<span class="st">&#39;age_numeric&#39;</span>] <span class="op">=</span> df_filtered[<span class="st">&#39;age&#39;</span>].<span class="bu">map</span>(age_mapping)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Dropping the original categorical column</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>df_filtered.drop(<span class="st">&#39;age&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking the result</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>df_filtered[[<span class="st">&#39;respondent_id&#39;</span>, <span class="st">&#39;age_numeric&#39;</span>]].head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">respondent_id</th>
+<th data-quarto-table-cell-role="th">age_numeric</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>3.292880e+09</td>
+<td>24.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3.292765e+09</td>
+<td>24.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3.292763e+09</td>
+<td>24.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3.292731e+09</td>
+<td>24.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3.292719e+09</td>
+<td>24.0</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div id="18375a2e" class="cell" data-execution_count="5">
+</div>
+</div>
+<div id="caf9f5cd" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Question C</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Check unique values in the original education column</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_filtered[<span class="st">&#39;education&#39;</span>].unique())</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a mapping dictionary to convert education categories to numerical values</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>education_mapping <span class="op">=</span> {</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Less than high school degree&#39;</span>: <span class="dv">1</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;High school degree&#39;</span>: <span class="dv">2</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Some college or Associate degree&#39;</span>: <span class="dv">3</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Bachelor degree&#39;</span>: <span class="dv">4</span>,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Graduate degree&#39;</span>: <span class="dv">5</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    np.nan: <span class="va">None</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new numerical column &#39;education_numeric&#39;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>df_filtered[<span class="st">&#39;education_numeric&#39;</span>] <span class="op">=</span> df_filtered[<span class="st">&#39;education&#39;</span>].<span class="bu">map</span>(education_mapping)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop the original categorical education column</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>df_filtered.drop(<span class="st">&#39;education&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Displaying first rows to check the results</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>df_filtered[[<span class="st">&#39;respondent_id&#39;</span>, <span class="st">&#39;education_numeric&#39;</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[&#39;High school degree&#39; &#39;Some college or Associate degree&#39; &#39;Bachelor degree&#39;
+ &#39;Graduate degree&#39; nan &#39;Less than high school degree&#39;]</code></pre>
 </div>
-<div id="a32d397a" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">respondent_id</th>
+<th data-quarto-table-cell-role="th">education_numeric</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>3.292880e+09</td>
+<td>2.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3.292765e+09</td>
+<td>2.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3.292763e+09</td>
+<td>3.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3.292731e+09</td>
+<td>3.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3.292719e+09</td>
+<td>4.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>3.292685e+09</td>
+<td>2.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>3.292664e+09</td>
+<td>2.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3.292654e+09</td>
+<td>3.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3.292640e+09</td>
+<td>3.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>3.292609e+09</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="f129c245" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Question D</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Mapping dictionary for income categories to numerical midpoints</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>income_mapping <span class="op">=</span> {</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;$0 - $24,999&#39;</span>: <span class="dv">12500</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;$25,000 - $49,999&#39;</span>: <span class="dv">37500</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;$50,000 - $99,999&#39;</span>: <span class="dv">75000</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;$100,000 - $149,999&#39;</span>: <span class="dv">125000</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;$150,000+&#39;</span>: <span class="dv">150000</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    np.nan: <span class="va">None</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a numerical income column</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>df_filtered[<span class="st">&#39;income_numeric&#39;</span>] <span class="op">=</span> df_filtered[<span class="st">&#39;household_income&#39;</span>].<span class="bu">map</span>(income_mapping)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop the original categorical income column</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>df_filtered.drop(<span class="st">&#39;household_income&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the result</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>df_filtered[[<span class="st">&#39;respondent_id&#39;</span>, <span class="st">&#39;income_numeric&#39;</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">respondent_id</th>
+<th data-quarto-table-cell-role="th">income_numeric</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1</td>
+<td>3.292880e+09</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3.292765e+09</td>
+<td>12500.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3.292763e+09</td>
+<td>125000.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3.292731e+09</td>
+<td>125000.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3.292719e+09</td>
+<td>37500.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>3.292685e+09</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>3.292664e+09</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3.292654e+09</td>
+<td>12500.0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3.292640e+09</td>
+<td>37500.0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>3.292609e+09</td>
+<td>37500.0</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div id="bff2b742" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
-<div id="27d8fd0b" class="cell" data-execution_count="8">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
-<div id="611788d1" class="cell" data-execution_count="9">
+<div id="556b4e81" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="94f38b52" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3831,16 +4019,16 @@ a. One-hot encode all remaining categorical columns</p>
 <h2 class="anchored" data-anchor-id="questiontask-3">QUESTION|TASK 3</h2>
 <p><strong>Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="3c9dbc75" class="cell" data-execution_count="10">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<div id="32f14661" class="cell" data-execution_count="11">
+<div id="2d9d702c" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="634378e3" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3848,10 +4036,10 @@ a. One-hot encode all remaining categorical columns</p>
 <h2 class="anchored" data-anchor-id="questiontask-4">QUESTION|TASK 4</h2>
 <p><strong>Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="1a379175" class="cell" data-execution_count="12">
+<div id="f545f929" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <hr>
@@ -3860,10 +4048,10 @@ a. One-hot encode all remaining categorical columns</p>
 <h2 class="anchored" data-anchor-id="stretch-questiontask-1">STRETCH QUESTION|TASK 1</h2>
 <p><strong>Build a machine learning model that predicts whether a person makes more than $50k. With accuracy of at least 65%. Describe your model and report the accuracy.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="138fbf8c" class="cell" data-execution_count="13">
+<div id="1c1ff452" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3871,10 +4059,10 @@ a. One-hot encode all remaining categorical columns</p>
 <h2 class="anchored" data-anchor-id="stretch-questiontask-2">STRETCH QUESTION|TASK 2</h2>
 <p><strong>Validate the data provided on GitHub lines up with the article by recreating a 3rd visual from the article.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="78eb45d3" class="cell" data-execution_count="14">
+<div id="d5d9b9dd" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3882,10 +4070,10 @@ a. One-hot encode all remaining categorical columns</p>
 <h2 class="anchored" data-anchor-id="stretch-questiontask-3">STRETCH QUESTION|TASK 3</h2>
 <p><strong>Create a new column that converts the location groupings to a single number. Drop the location categorical column.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="601247e5" class="cell" data-execution_count="15">
+<div id="e1d82929" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <hr>
