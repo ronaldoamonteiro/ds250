@@ -238,13 +238,28 @@ df_filtered[['respondent_id', 'income_numeric']].head(10)
 ```
 
 ```{python}
-# Include and execute your code here
+# Question E
+
+# Creating the target column (label)
+df_filtered['income_above_50k'] = df_filtered['income_numeric'].apply(lambda x: 1 if x > 50000 else 0)
+
+# Displaying the result
+df_filtered[['respondent_id', 'income_numeric', 'income_above_50k']].head(10)
 
 
 ```
 
 ```{python}
-# Include and execute your code here
+# Question F
+# Identifying remaining categorical columns
+categorical_cols = df_filtered.select_dtypes(include=['object']).columns
+
+# One-hot encode all remaining categorical columns
+df_final = pd.get_dummies(df_filtered, columns=categorical_cols, dummy_na=True, drop_first=True)
+
+# Displaying a preview of the resulting DataFrame
+df_final.head()
+
 
 
 ```
